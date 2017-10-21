@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.madscientists.accessibilityservicedemo.Activity_Main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This accessibility Service checks for frapp.in and frapp.in/internships and shows a notification which opens corresponding app pages if found!"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:id="@+id/btn_accessibility_settings"
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_bg_accent"
+        android:textSize="14sp"
+        android:text="Enable Accessibility Service"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        />
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:id="@+id/btn_open_browser"
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_bg_primary"
+        android:textSize="14sp"
+        android:text="Open Chrome"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeViewTextChanged"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagDefault|flagIncludeNotImportantViews|flagReportViewIds|flagRequestEnhancedWebAccessibility|flagRetrieveInteractiveWindows"
+    android:canRetrieveWindowContent="true"
+    android:notificationTimeout="250"
+    android:summary="Provides a service which listens to the url typed in the native Chrome nrowser
+    and gives a notification if an existing app for the same is available. Does so in order to give a better feel to the user"
+    android:description="@string/service_config_desc"
+    android:packageNames="com.android.chrome"
+    android:settingsActivity="com.example.android.apis.accessibility.TestBackActivity" />

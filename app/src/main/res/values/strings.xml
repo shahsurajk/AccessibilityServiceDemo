@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Accessibility Service Demo</string>
+    <string name="service_config_desc">Checks if an app exists for the entered URL</string>
+</resources>
