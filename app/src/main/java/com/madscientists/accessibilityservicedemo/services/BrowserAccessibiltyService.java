@@ -1,7 +1,6 @@
 package com.madscientists.accessibilityservicedemo.services;
 
 import android.accessibilityservice.AccessibilityService;
-import android.accessibilityservice.AccessibilityServiceInfo;
 import android.app.NotificationChannel;
 import android.app.PendingIntent;
 import android.content.Intent;
@@ -23,8 +22,8 @@ public class BrowserAccessibiltyService extends AccessibilityService {
 
     private static final int NOTIFICATION_ID = 1234;
     private static final String TAG = BrowserAccessibiltyService.class.getCanonicalName();
-    private NotificationManagerCompat notificationManagerCompat;
     private static final String APP_PACKAGE ="com.ninetaleswebventures.frapp";
+    private NotificationManagerCompat notificationManagerCompat;
     private String search_text="";
     @Override
     public void onAccessibilityEvent(AccessibilityEvent accessibilityEvent) {
@@ -79,6 +78,8 @@ public class BrowserAccessibiltyService extends AccessibilityService {
         NotificationCompat.Builder nBuilder = new NotificationCompat.Builder(this,
                 NotificationChannel.DEFAULT_CHANNEL_ID)
                 .setContentTitle("Open in app?")
+                .setContentIntent(pendingIntent)
+                .setAutoCancel(true)
                 .setSmallIcon(android.R.drawable.ic_lock_idle_lock)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setWhen(System.currentTimeMillis())
